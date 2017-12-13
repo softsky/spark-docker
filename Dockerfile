@@ -1,5 +1,5 @@
-FROM singularities/hadoop:2.8
-MAINTAINER Singularities
+FROM softsky/hadoop:latest
+MAINTAINER SOFTSKY Arsen A. Gutsal <a.gutsal@softsky.com.ua>
 
 # Version
 ENV SPARK_VERSION=2.2.1
@@ -10,7 +10,7 @@ ENV SPARK_HOME=/usr/local/spark-$SPARK_VERSION
 # Install dependencies
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install \
-    -yq --no-install-recommends  \
+    -yq --no-install-recommends --allow-unauthenticatedo \
       python python3 \
   && apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
