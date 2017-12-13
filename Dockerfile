@@ -10,7 +10,7 @@ ENV SPARK_HOME=/usr/local/spark-$SPARK_VERSION
 # Install dependencies
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install \
-    -yq --no-install-recommends --allow-unauthenticatedo \
+    -yq --no-install-recommends --allow-unauthenticated \
       python python3 \
   && apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
