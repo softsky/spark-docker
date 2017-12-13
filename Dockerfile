@@ -1,4 +1,4 @@
-FROM softsky/hadoop:latest
+FROM softsky/hadoop:2.9
 MAINTAINER SOFTSKY Arsen A. Gutsal <a.gutsal@softsky.com.ua>
 
 # Version
