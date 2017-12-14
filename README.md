@@ -2,11 +2,11 @@
 
 An [Apache Spark](http://spark.apache.org/) container image. The image is meant to be used for creating an standalone cluster with multiple workers.
 
-- [`1.5` (Dockerfile)](https://github.com/SingularitiesCR/spark-docker/blob/1.5/Dockerfile)
-- [`1.6` (Dockerfile)](https://github.com/SingularitiesCR/spark-docker/blob/1.6/Dockerfile)
-- [`2.0` (Dockerfile)](https://github.com/SingularitiesCR/spark-docker/blob/2.0/Dockerfile)
-- [`2.1` (Dockerfile)](https://github.com/SingularitiesCR/spark-docker/blob/2.1/Dockerfile)
-- [`2.2` (Dockerfile)](https://github.com/SingularitiesCR/spark-docker/blob/2.2/Dockerfile)
+- [`1.5` (Dockerfile)](https://github.com/softsky/spark-docker/blob/1.5/Dockerfile)
+- [`1.6` (Dockerfile)](https://github.com/softsky/spark-docker/blob/1.6/Dockerfile)
+- [`2.0` (Dockerfile)](https://github.com/softsky/spark-docker/blob/2.0/Dockerfile)
+- [`2.1` (Dockerfile)](https://github.com/softsky/spark-docker/blob/2.1/Dockerfile)
+- [`2.2` (Dockerfile)](https://github.com/softsky/spark-docker/blob/2.2/Dockerfile)
 
 ## Custom commands
 
@@ -46,7 +46,7 @@ version: "2"
 
 services:
   master:
-    image: singularities/spark
+    image: softsky/spark
     command: start-spark master
     hostname: master
     ports:
