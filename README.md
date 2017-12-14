@@ -55,7 +55,7 @@ services:
       - "8080:8080"
       - "50070:50070"
   worker:
-    image: singularities/spark
+    image: softsky/spark
     command: start-spark worker master
     environment:
       SPARK_WORKER_CORES: 1
